@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76C43472-4722-4C73-8EB3-20D572C8CA2C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EM_WinForm</RootNamespace>
+    <AssemblyName>EM_WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CCommissioned.cs" />
+    <Compile Include="CEmployee.cs" />
+    <Compile Include="CfrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CfrmAbout.Designer.cs">
+      <DependentUpon>CfrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CfrmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CfrmAddEmployee.Designer.cs">
+      <DependentUpon>CfrmAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CfrmConfirmRemoval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CfrmConfirmRemoval.Designer.cs">
+      <DependentUpon>CfrmConfirmRemoval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CfrmEditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CfrmEditEmployee.Designer.cs">
+      <DependentUpon>CfrmEditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CfrmEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CfrmEmployees.Designer.cs">
+      <DependentUpon>CfrmEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CfrmMessages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CfrmMessages.Designer.cs">
+      <DependentUpon>CfrmMessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CfrmPaySlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CfrmPaySlip.Designer.cs">
+      <DependentUpon>CfrmPaySlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CfrmTaxCommission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CfrmTaxCommission.Designer.cs">
+      <DependentUpon>CfrmTaxCommission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSalaried.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CfrmAbout.resx">
+      <DependentUpon>CfrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CfrmAddEmployee.resx">
+      <DependentUpon>CfrmAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CfrmConfirmRemoval.resx">
+      <DependentUpon>CfrmConfirmRemoval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CfrmEditEmployee.resx">
+      <DependentUpon>CfrmEditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CfrmEmployees.resx">
+      <DependentUpon>CfrmEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CfrmMessages.resx">
+      <DependentUpon>CfrmMessages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CfrmPaySlip.resx">
+      <DependentUpon>CfrmPaySlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CfrmTaxCommission.resx">
+      <DependentUpon>CfrmTaxCommission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
