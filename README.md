@@ -1,7 +1,7 @@
 # Employee Management System (WinForms)
 
 ## Overview
-The **Employee Management System** is a Windows Forms (WinForms) application built using C# and .NET. This application provides functionalities to manage employee records, including adding, updating, deleting, and viewing employee details in a user-friendly graphical interface.
+The **Employee Management System** is a Windows Forms (WinForms) application built using C# and .NET Framework. This application provides functionalities to manage employee records, including adding, updating, deleting, and viewing employee details in a user-friendly graphical interface.
 
 ## Features
 - Add new employees with details like name, position, department, and contact information.
@@ -22,9 +22,7 @@ The **Employee Management System** is a Windows Forms (WinForms) application bui
    git clone https://github.com/SirTebz/EmployeeManagement-WinForms.git
    ```
 2. Open the project in **Visual Studio**.
-3. Restore NuGet packages (if any).
-4. Configure the database connection in `App.config` (if using a database).
-5. Build and run the application.
+3. Build and run the application.
 
 ## Usage
 1. Launch the application.
